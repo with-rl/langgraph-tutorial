@@ -17,12 +17,12 @@ async def main():
             "messages": [
                 {
                     "role": "human",
-                    "content": "What is LangGraph?",
+                    "content": "랭그래프가 뭐야?",
                 }
             ],
         },
     ):
-        print(f"Receiving new event of type: {chunk.event}...")
+        print(f"수신 event: {chunk.event}...")
         print(chunk.data)
         print("\n\n")
 
